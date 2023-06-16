@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f5f5f5; */
+    background: linear-gradient(180deg, rgb(0, 255, 229) 0%, rgba(255, 255, 255, 1) 100%);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    padding-right: 35px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+  
+  
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  h2 {
+    margin-top: 40px;
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  p#total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  /* Add rainbow colors */
+  @media only screen and (max-width: 800px) {
+    body {
+        background-color: #f5f5f5;
+    }
+  
+    h1 {
+        color: #f00;
+    }
+  
+    button {
+        background-color: #ff0;
+    }
+  
+    li {
+        background-color: #0f0;
+    }
+  }
+  
+  @media only screen and (min-width: 801px) {
+    body {
+  
+        background-repeat: no-repeat;
+  
+        background: linear-gradient(to right, #f00, #ff0, #0f0, #00f, #f0f);
+  
+        background: linear-gradient(180deg, rgba(0, 87, 84, 1) 15%, rgba(0, 255, 231, 1) 94%);
+  
+        background: linear-gradient(180deg, rgba(0, 255, 231, 1) 0%, rgba(0, 195, 178, 1) 47%, rgb(0, 0, 0) 100%);
+  
+        background: linear-gradient(180deg, rgb(0, 255, 229) 0%, rgba(255, 255, 255, 1) 100%);
+  
+        background-repeat: no-repeat;
+  
+    }
+  
+    h1 {
+        background: linear-gradient(180deg, rgb(0, 158, 150) 15%, rgb(0, 21, 255) 94%);
+        background: rgb(26, 1, 46);
+  
+  
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+  
+    button {
+        background-color: #333;
+        background: linear-gradient(to right, #f00, #ff0, #0f0, #00f, #f0f);
+  
+        background: radial-gradient(circle at 24.1% 68.8%,
+                rgb(59, 20, 122) 0%,
+                rgb(26, 1, 46) 99.4%);
+  
+    }
+  
+    li {
+  
+        background: linear-gradient(90deg, rgba(255, 149, 222, 1) 0%, rgba(231, 18, 137, 1) 72%);
+    }
+  }
+  
+  
+  .output_div {
+    padding: 10px;
+    overflow: auto;
+    overflow-wrap: break-word;
+    overflow-wrap: normal;
+  
+  }
+  
+  .output_div span {
+    font-weight: bold;
+    margin: 10px;
+    overflow: auto;
+    overflow-wrap: break-word;
+    overflow-wrap: normal;
+    flex-wrap: wrap;
+  }
+  
+  .edit_but {
+    margin-right: 10px;
+    margin-top: -10px;
+    position: absolute;
+    right: 30%;
+  }
+  
+  .delete_but {
+    position: absolute;
+    right: 22%;
+    margin-right: 10px;
+    margin-top: -10px;
+  }
+  
+  
+  .expenses {
+    background: linear-gradient(90deg, rgba(255, 149, 222, 1) 0%, rgba(231, 18, 137, 1) 72%);
+  
+  }
+  /* ==================== */
+  
+  @media only screen and (max-width: 500px) {
+    body {
+  
+        background-repeat: no-repeat;
+  
+        background: linear-gradient(to right, #f00, #ff0, #0f0, #00f, #f0f);
+  
+        background: linear-gradient(180deg, rgba(0, 87, 84, 1) 15%, rgba(0, 255, 231, 1) 94%);
+  
+        background: linear-gradient(180deg, rgba(0, 255, 231, 1) 0%, rgba(0, 195, 178, 1) 47%, rgb(0, 0, 0) 100%);
+  
+        background: linear-gradient(180deg, rgb(0, 255, 229) 0%, rgba(255, 255, 255, 1) 100%);
+  
+        background-repeat: no-repeat;
+  
+    }
+  
+    h1 {
+        background: linear-gradient(180deg, rgb(0, 158, 150) 15%, rgb(0, 21, 255) 94%);
+        background: rgb(26, 1, 46);
+  
+  
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+  
+    button {
+        background-color: #333;
+        background: linear-gradient(to right, #f00, #ff0, #0f0, #00f, #f0f);
+  
+        background: radial-gradient(circle at 24.1% 68.8%,
+                rgb(59, 20, 122) 0%,
+                rgb(26, 1, 46) 99.4%);
+  
+    }
+  
+    .output_div {
+        padding: 10px;
+    }
+  
+    .output_div span {
+        font-weight: bold;
+        margin: 10px;
+        overflow: auto;
+        overflow-wrap: break-word;
+        overflow-wrap: normal;
+        flex-wrap: wrap;
+    }
+  
+    .edit_but {
+        margin-right: 10px;
+        margin-top: -10px;
+        position: absolute;
+        right: 35%;
+    }
+  
+    .delete_but {
+        position: absolute;
+        right: 10%;
+        margin-right: 10px;
+        margin-top: -10px;
+    }
+  }
+  
